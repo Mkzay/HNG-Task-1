@@ -6,23 +6,16 @@
     <title>HNG Task 1</title>
     <link rel="stylesheet" href="styles/output.css">
 </head>
-<body class="flex items-center justify-center my-10">
-    <div class="flex items-center justify-center flex-col gap-4 rounded-xl bg-black border-2 border-lime-700 pb-5">
-        <div class="flex items-center justify-center flex-col-reverse">
-            <h1 data-testid="slackUserName" class="text-2xl text-lime-400">Wahab Ayomikun</h1>
-            <img data-testid="slackDisplayImage" class="rounded-xl pb-2" src="Img/T05FFAA91JP-U05R8RLNWP7-3a07f01631a8-512.jpeg" alt="Wahab Ayomikun">
-        </div>
-
-        <div class="flex items-center justify-center flex-col">
-            <p data-testid="myTrack" class="text-xl text-lime-400 pb-2">Frontend Development</p>
-            <p data-testid="githubURL" class="text-xl text-lime-400"><a href="https://github.com/Mkzay/HNG-Task-1" target="_blank">GitHub Repository</a></p>
-        </div>
-
-        <div class="flex items-center justify-center flex-col">
-            <p data-testid="currentDayOfTheWeek" class="text-lime-400 pb-2">Day of the Week</p>
-            <p data-testid="currentUTCTime" class="text-lime-400">UTC Time</p>
-        </div>
+<body class="flex items-center justify-center flex-col">
+    <div class=" flex items-center justify-center flex-col w-10/12">
+        <h1 data-testid="slackUserName" class="text-2xl">Wahab Ayomikun</h1>
+        <img src="Img/T05FFAA91JP-U05R8RLNWP7-3a07f01631a8-512.jpeg" alt="Wahab Ayomikun" data-testid="slackDisplayImage">
+        <p data-testid="githubURL"><a href="https://github.com/Mkzay/HNG-Task-1" target="_blank">GitHub Repository</a></p>
+        <p data-testid="currentDayOfTheWeek">Current Day of the Week: <span id="dayOfWeek"></span></p>
+        <p data-testid="currentUTCTime">Current UTC Time (milliseconds): <span id="utcTime"></span></p>
+        <p data-testid="myTrack">Track: Frontend</p>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
